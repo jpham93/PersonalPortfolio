@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<!--I accounted for some errors, but I found the website still functional. Although iframe should not be a descendant
+of <a>, my intention for the iframe is not to be interactive. I turned off the interaction through CSS. I also used the
+obsolete scrolling attribtue because CSS overflow for iframe does not work on chrome when I made this web page-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Personal Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="portfolio.css" />
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div id="navbar">
+            <a href="#welcome-section">About</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="#projects">Work</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="#profile-link">Contact</a> &nbsp; &nbsp;
+        </div>
+
+        <div id="welcome-section">
+            <div id="welcome-text">
+                <h2 style="font-size: 28px;">Hi I'm James</h2>
+                <span style="color: green;">An aspiring Web Developer</span>
+            </div>
+        </div>
+
+        <div id="projects">
+            <!--Set max height of h2 element-->
+            <br>
+            <br>
+            <h2 style="text-align: center; color: rgb(95, 134, 160);">Here are some of my projects...</h2>
+            <br>
+            <br>
+
+            <div id="container">
+                
+                <a href="https://codepen.io/jamespham93/full/BVQjpz/" class="project-section">
+                    <iframe src="https://codepen.io/jamespham93/full/BVQjpz/" scrolling="no"></iframe> <!--must keep scrolling attribute for chrome-->
+                    <span class="subtitle">Tribute Page</span>
+                </a>
+
+                <a href="https://codepen.io/jamespham93/full/NzOPdB/" class="project-section">
+                    <iframe src="https://codepen.io/jamespham93/full/NzOPdB/" scrolling="no"></iframe>
+                    <span class="subtitle">Job Application (Form)</span>
+                </a>
+
+                <a href="https://codepen.io/jamespham93/full/yEPpYj/" class="project-section">
+                    <iframe src="https://codepen.io/jamespham93/full/yEPpYj/" scrolling="no"></iframe>
+                    <span class="subtitle">Product Landing</span>
+                </a>
+
+                <a href="https://codepen.io/jamespham93/full/ZRVVOx" class="project-section">
+                    <iframe src="https://codepen.io/jamespham93/full/ZRVVOx" scrolling="no"></iframe>
+                    <span class="subtitle">Technical Documentation</span>
+                </a>
+
+                <a href="https://thimbleprojects.org/jamespham93/508720"  class="project-section">
+                    <iframe src="https://thimbleprojects.org/jamespham93/508720" scrolling="no"></iframe>
+                    <span class="subtitle">Final Project For Web Development</span>
+                </a>
+
+                <a href="https://thimbleprojects.org/jamespham93/535353" class="project-section">
+                    <iframe src="https://thimbleprojects.org/jamespham93/535353" scrolling='no'></iframe>
+                    <span class="subtitle">Random Quote Machine</span>
+                </a>
+
+                <a href="https://codepen.io/jamespham93/full/BOZJzw/" class="project-section">
+                    <iframe src="https://codepen.io/jamespham93/full/BOZJzw/" srolling='no'></iframe>
+                    <span class="subtitle">React Calculator</span>
+                </a>
+
+                <a href="https://codepen.io/jamespham93/full/PdBdwp/" class="project-section">
+                    <iframe src="https://codepen.io/jamespham93/full/PdBdwp/" srolling='no'></iframe>
+                    <span class="subtitle">Pomodoro Clock</span>
+                </a>
+
+                <a href="https://codepen.io/jamespham93/full/BOGqQw/" class="project-section">
+                    <iframe src="https://codepen.io/jamespham93/full/BOGqQw/" srolling='no'></iframe>
+                    <span class="subtitle">Markdown Previewer</span>
+                </a>
+
+                <a href="https://thimbleprojects.org/jamespham93/539747" class="project-section">
+                    <iframe src="https://thimbleprojects.org/jamespham93/539747" srolling='no'></iframe>
+                    <span class="subtitle">Drum Machine</span>
+                </a>
+
+            </div>
+
+            <a href="https://codepen.io/collection/XmWGre/">
+                <div id="show-all">
+                    Show All
+                </div>
+            </a>
+
+        </div>
+
+        <div id="profile-link">
+            <h2><span style="font-size: 30px; font-weight: 700;">Let's Work Together</span></h2>
+            <span style="color: green;">Would you like to grab some coffee?</span>
+            <br>
+            <br>
+            <br>   
+
+            <div id="container-2">
+
+                <a href="https://codepen.io/jamespham93/">
+                    <!--Individual styling for face book link because of length of text-->
+                    <div class="link">
+                        CodePen
+                    </div>
+                </a>
+
+                <a href="https://github.com/jpham93/">
+                    <div class="link">
+                        GitHub
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="link">
+                        E-mail
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="link">
+                        Call Me
+                    </div>
+                </a>
+            </div>    
+        </div>
+
+        <div id="footer">
+
+            (Some links are not functional or real due to privacy concerns)
+            <br><br>
+            &copy; Created For <span style="text-decoration-line: underline;">FreeCodeCamp</span>
+        </div>
+    </body>
+</html>
