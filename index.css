@@ -12,6 +12,11 @@ nav#navbar.navbar, footer#footer {
 
 #link-container {
 	position: relative;
+	/* Flex properties to prevent hamburger from sticking to left side of parent container */
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
 }
 
 #navbarNavDropdown {
